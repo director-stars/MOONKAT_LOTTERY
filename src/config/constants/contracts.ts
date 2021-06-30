@@ -3,7 +3,7 @@ export default {
     // 56: '0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
     // 56: '0xC5f6Fa9e193DF57272C59Bbf5AD8bAAAf9959Ec8',
     56: '0x509949c4ee0c1c2c765cf9b23c75d823981e22ae',
-    97: '0x81f1e2fbb43d821507d38ae343874df121925b60',
+    97: '0x5f6Ef6608B3deb84A38d12Bce535Fdd6aB195A66',
   },
   masterChef: {
     // 56: '0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57',
@@ -21,11 +21,11 @@ export default {
   },
   mkat: {
     56: '0xc25d94fc3f8d7bd1d88f89802fe075338f71dec7',
-    97: '0x81f1e2fbb43d821507d38ae343874df121925b60',
+    97: '0x5f6Ef6608B3deb84A38d12Bce535Fdd6aB195A66',
   },
   mkats: {
     56: '0x509949c4ee0c1c2c765cf9b23c75d823981e22ae',
-    97: '',
+    97: '0x5f6Ef6608B3deb84A38d12Bce535Fdd6aB195A66',
   },
   lottery: {
     56: '0x51985A746Cd99Ae86AD0f0A4E1263F6698566092',

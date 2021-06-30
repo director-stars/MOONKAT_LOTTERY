@@ -1,0 +1,54 @@
+export default {
+  cake: {
+    // 56: '0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+    // 56: '0xC5f6Fa9e193DF57272C59Bbf5AD8bAAAf9959Ec8',
+    56: '0x509949c4ee0c1c2c765cf9b23c75d823981e22ae',
+    97: '0x81f1e2fbb43d821507d38ae343874df121925b60',
+  },
+  masterChef: {
+    // 56: '0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57',
+    // 56: '0xD3DdE681367D039b60bC47Eec04C69bd7cb8A266',
+    56: '0xf9F9cdcf039827C55946028606beA6aED0ff2dac',
+    97: '',
+  },
+  bnbRewardChef: {
+    56: '0x159B3859B6Cff4BDD17bcA14B81eab7E95De0c94',
+    97: '',
+  },
+  wbnb: {
+    56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    97: '',
+  },
+  mkat: {
+    56: '0xc25d94fc3f8d7bd1d88f89802fe075338f71dec7',
+    97: '0x81f1e2fbb43d821507d38ae343874df121925b60',
+  },
+  mkats: {
+    56: '0x509949c4ee0c1c2c765cf9b23c75d823981e22ae',
+    97: '',
+  },
+  lottery: {
+    56: '0x51985A746Cd99Ae86AD0f0A4E1263F6698566092',
+    97: '0xCC7986A6a8A0774070868Cf0D4aCe451DbEC76EF',
+  },
+  lotteryForMkat: {
+    56: '0xd07D6Cd25b59559863Feb2908800d6062dF55e07',
+    97: '0xCC7986A6a8A0774070868Cf0D4aCe451DbEC76EF',
+  },
+  lotteryNFT: {
+    56: '0x8Bf0CaBf3e08E919276A84cC510D13959F2aE467',
+    97: '0x881ffD8f2FF93214805BB00Af07ba49696fDBB8A',
+  },
+  lotteryNFTForMkat: {
+    56: '0x6BEED098Abe22919C83A4Ce861e1D0549a8B6459',
+    97: '0x881ffD8f2FF93214805BB00Af07ba49696fDBB8A',
+  },
+  mulltiCall: {
+    56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
+    97: '0x67ADCB4dF3931b0C5Da724058ADC2174a9844412',
+  },
+  busd: {
+    56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    97: '',
+  },
+}

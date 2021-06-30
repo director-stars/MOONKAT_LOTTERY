@@ -4,8 +4,8 @@ const tokenInfo: TokenInfo[] = [
   {
     id: 0,
     tokenName: 'MKAT',
-    contract: '0xc25D94fc3f8D7bD1d88f89802fe075338F71dEC7',
-    decimals: 8,
+    contract: '0x5f6Ef6608B3deb84A38d12Bce535Fdd6aB195A66',
+    decimals: 9,
   },
 ]
 

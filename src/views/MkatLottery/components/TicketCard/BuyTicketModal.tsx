@@ -21,7 +21,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
   const [pendingTx, setPendingTx] = useState(false)
   const [, setRequestedBuy] = useState(false)
   const TranslateString = useI18n()
-  const pricePerTicket = 200
+  const pricePerTicket = 20000
   const permittedMaxTickets = 50
   const fullBalance = useMemo(() => {
     return getFullDisplayBalance(max, tokenInfo[0].decimals)

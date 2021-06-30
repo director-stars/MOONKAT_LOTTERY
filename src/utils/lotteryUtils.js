@@ -45,7 +45,7 @@ export const multiBuy = async (lotteryContract, price, numbersList, account) => 
 export const multiBuyForMkat = async (lotteryContract, price, numbersList, account) => {
   try {
     return lotteryContract.methods
-      .multiBuy(new BigNumber(price).times(new BigNumber(10).pow(8)).toString(), numbersList)
+      .multiBuy(new BigNumber(price).times(new BigNumber(10).pow(9)).toString(), numbersList)
       .send({ from: account })
       .on('transactionHash', (tx) => {
         return tx.transactionHash
@@ -191,7 +191,7 @@ export const getLotteryStatus = async (lotteryContract) => {
 }
 
 export const getMatchingRewardLength = async (lotteryContract, matchNumber) => {
-  const pricePerTicket = 30
+  const pricePerTicket = 200
   let issueIdex = await lotteryContract.methods.issueIndex().call()
   const drawed = await lotteryContract.methods.drawed().call()
   if (!drawed) {

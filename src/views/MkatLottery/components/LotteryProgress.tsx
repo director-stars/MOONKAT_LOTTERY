@@ -41,6 +41,10 @@ const LotteryProgress = () => {
   const timeUntilTicketSale = getTicketSaleTime(currentMillis)
   const timeUntilLotteryDraw = getLotteryDrawTime(currentMillis)
 
+  // console.log('getLotteryDrawStep',getLotteryDrawStep(currentMillis));
+  // console.log('getTicketSaleStep',getTicketSaleStep());
+  // console.log('timeUntilTicketSale',timeUntilTicketSale);
+  // console.log('timeUntilLotteryDraw',timeUntilLotteryDraw);
   return (
     <ProgressWrapper>
       <Progress primaryStep={getLotteryDrawStep(currentMillis)} secondaryStep={getTicketSaleStep()} showProgressBunny />

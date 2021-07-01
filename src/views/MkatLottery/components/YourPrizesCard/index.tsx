@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody } from '@pancakeswap-libs/uikit'
+import { Card, CardBody } from 'MOONKAT_uikit'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalClaimForMkat } from 'hooks/useTickets'
 import PrizesWonContent from './PrizesWonContent'

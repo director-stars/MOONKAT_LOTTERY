@@ -4,7 +4,7 @@ import { allLanguages } from 'config/localisation/languageCodes'
 import { LanguageContext } from 'contexts/Localisation/languageContext'
 import useTheme from 'hooks/useTheme'
 import { usePriceCakeBusd } from 'state/hooks'
-import { Menu as UikitMenu } from '@pancakeswap-libs/uikit'
+import { Menu as UikitMenu } from 'MOONKAT_uikit'
 import config from './config'
 
 const Menu = (props) => {
@@ -25,7 +25,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
-      priceLink="https://bscscan.com/token/0x509949c4ee0c1c2c765cf9b23c75d823981e22ae"
+      priceLink="https://testnet.bscscan.com/token/0x5f6Ef6608B3deb84A38d12Bce535Fdd6aB195A66"
       {...props}
     />
   )

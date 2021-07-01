@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, useModal } from '@pancakeswap-libs/uikit'
+import { Button, useModal } from 'MOONKAT_uikit'
 import useI18n from 'hooks/useI18n'
 import { useGetLotteryHasDrawnForMkat } from 'hooks/useGetLotteryHasDrawn'
 import { useLotteryAllowanceForMkat } from 'hooks/useAllowance'

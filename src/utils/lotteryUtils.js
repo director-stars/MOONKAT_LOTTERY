@@ -181,6 +181,13 @@ export const getMax = async (lotteryContract) => {
   return lotteryContract.methods.maxNumber().call()
 }
 
+export const getAllocation = async (lotteryContract) => {
+  const firstReward = await lotteryContract.methods.allocation(0).call()
+  const secondReward = await lotteryContract.methods.allocation(1).call()
+  const thirdReward = await lotteryContract.methods.allocation(2).call()
+  return [firstReward, secondReward, thirdReward]
+}
+
 export const getLotteryIssueIndex = async (lotteryContract) => {
   const issueIndex = await lotteryContract.methods.issueIndex().call()
   return issueIndex

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import useI18n from 'hooks/useI18n'
 import { Heading, Text } from '@pancakeswap-libs/uikit'
+import { useAllocation } from 'hooks/useTickets'
 
 export interface PrizeGridProps {
   lotteryPrizeAmount?: number
@@ -32,7 +33,6 @@ const GridItem = styled.div<{ marginBottom?: string }>`
 const PastDrawGridItem = styled(GridItem)`
   transform: translate(-40%, 0%);
 `
-
 const PrizeGrid: React.FC<PrizeGridProps> = ({
   lotteryPrizeAmount = 0,
   pastDraw = false,
@@ -40,10 +40,11 @@ const PrizeGrid: React.FC<PrizeGridProps> = ({
   twoTicketMatches,
   threeTicketMatches,
 }) => {
-  const fourMatchesAmount = +((lotteryPrizeAmount / 100) * 40).toFixed(0)
-  const threeMatchesAmount = +((lotteryPrizeAmount / 100) * 20).toFixed(0)
-  const twoMatchesAmount = +((lotteryPrizeAmount / 100) * 10).toFixed(0)
-  const burnAmount = +((lotteryPrizeAmount / 100) * 30).toFixed(0)
+  const distribution = useAllocation()
+  const fourMatchesAmount = +((lotteryPrizeAmount / 100) * distribution[0]).toFixed(0)
+  const threeMatchesAmount = +((lotteryPrizeAmount / 100) * distribution[1]).toFixed(0)
+  const twoMatchesAmount = +((lotteryPrizeAmount / 100) * distribution[2]).toFixed(0)
+  const burnAmount = +((lotteryPrizeAmount / 100) * (100 - distribution[0] - distribution[1] - distribution[2])).toFixed(0)
   const TranslateString = useI18n()
 
   return (

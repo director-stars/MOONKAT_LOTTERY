@@ -10,6 +10,7 @@ import {
   getMatchingRewardLengthForMkat,
   getWinningNumbers,
   getTickets,
+  getAllocation,
 } from '../utils/lotteryUtils'
 
 const useTickets = (lotteryNumber = null) => {
@@ -214,6 +215,25 @@ export const useMatchingRewardLengthForMkat = (numbers) => {
   }, [lotteryContract, numbers, fastRefresh])
 
   return matchingNumbers
+}
+
+export const useAllocation = () => {
+  const [distrubution, setDistribution] = useState([0, 0, 0])
+  const lotteryContract = useLottery()
+  const { fastRefresh } = useRefresh()
+
+  useEffect(() => {
+    const fetchBalance = async () => {
+      const [firstReward, secondReward, thirdReward] = await getAllocation(lotteryContract)
+      setDistribution([firstReward, secondReward, thirdReward])
+    }
+
+    if (lotteryContract) {
+      fetchBalance()
+    }
+  }, [lotteryContract, fastRefresh])
+
+  return distrubution
 }
 
 export default useTickets

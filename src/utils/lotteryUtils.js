@@ -214,7 +214,7 @@ export const getMatchingRewardLength = async (lotteryContract, matchNumber) => {
 }
 
 export const getMatchingRewardLengthForMkat = async (lotteryContract, matchNumber) => {
-  const pricePerTicket = 200
+  const pricePerTicket = 20000
   let issueIdex = await lotteryContract.methods.issueIndex().call()
   const drawed = await lotteryContract.methods.drawed().call()
   if (!drawed) {
@@ -222,7 +222,7 @@ export const getMatchingRewardLengthForMkat = async (lotteryContract, matchNumbe
   }
   try {
     const amount = await lotteryContract.methods.historyAmount(issueIdex, 5 - matchNumber).call()
-    return amount / 1e8 / pricePerTicket
+    return amount / 1e9 / pricePerTicket
   } catch (err) {
     console.error(err)
   }

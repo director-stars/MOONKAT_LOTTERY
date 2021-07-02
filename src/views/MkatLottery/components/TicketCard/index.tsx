@@ -6,7 +6,7 @@ import { useGetLotteryHasDrawnForMkat } from 'hooks/useGetLotteryHasDrawn'
 import { useTicketsForMkat } from 'hooks/useTickets'
 import { useCurrentTime } from 'hooks/useTimer'
 import TicketActions from './TicketActions'
-import { getTicketSaleTime } from '../../helpers/CountdownHelpers'
+import { getTicketSaleTime, getNextLotteryTime } from '../../helpers/CountdownHelpers'
 
 interface CardProps {
   isSecondCard?: boolean
@@ -54,7 +54,7 @@ const TicketCard: React.FC<CardProps> = ({ isSecondCard = false }) => {
 
   const currentMillis = useCurrentTime()
   const timeUntilTicketSale = lotteryHasDrawn && getTicketSaleTime(currentMillis)
-
+  const nextLottery = getNextLotteryTime(currentMillis).toDateString()
   return (
     <StyledCard isSecondCard={isSecondCard}>
       <CardBody>
@@ -65,9 +65,9 @@ const TicketCard: React.FC<CardProps> = ({ isSecondCard = false }) => {
           {lotteryHasDrawn ? (
             <TicketCountWrapper>
               <Text fontSize="14px" color="textSubtle">
-                {TranslateString(999, 'Until ticket sale:')}
+                {TranslateString(999, 'Next Lottery ticket sale:')}
               </Text>
-              <Heading size="lg">{timeUntilTicketSale}</Heading>
+              <Heading size="lg">{nextLottery}</Heading>
             </TicketCountWrapper>
           ) : (
             <TicketCountWrapper>

@@ -9,6 +9,7 @@ import {
   getLotteryDrawStep,
   getTicketSaleTime,
   getTicketSaleStep,
+  getNextLotteryTime,
 } from '../helpers/CountdownHelpers'
 
 const ProgressWrapper = styled.div`
@@ -40,26 +41,26 @@ const LotteryProgress = () => {
   const currentMillis = useCurrentTime()
   const timeUntilTicketSale = getTicketSaleTime(currentMillis)
   const timeUntilLotteryDraw = getLotteryDrawTime(currentMillis)
-
-  // console.log('getLotteryDrawStep',getLotteryDrawStep(currentMillis));
-  // console.log('getTicketSaleStep',getTicketSaleStep());
-  // console.log('timeUntilTicketSale',timeUntilTicketSale);
-  // console.log('timeUntilLotteryDraw',timeUntilLotteryDraw);
+  const nextLottery = getNextLotteryTime(currentMillis).toDateString()
   return (
     <ProgressWrapper>
-      <Progress primaryStep={getLotteryDrawStep(currentMillis)} secondaryStep={getTicketSaleStep()} showProgressBunny />
+      {!lotteryHasDrawn && (
+        <Progress primaryStep={getLotteryDrawStep(currentMillis)} secondaryStep={getTicketSaleStep()} showProgressBunny />
+      )}
       <TopTextWrapper>
         <StyledPrimaryText fontSize="20px" bold color="contrast">
-          {lotteryHasDrawn ? timeUntilTicketSale : timeUntilLotteryDraw}
+          {/* {lotteryHasDrawn ? timeUntilTicketSale : timeUntilLotteryDraw} */}
+          {lotteryHasDrawn ? '' : timeUntilLotteryDraw}
         </StyledPrimaryText>
         <Text fontSize="20px" bold color="invertedContrast">
-          {lotteryHasDrawn ? TranslateString(0, 'Until ticket sale') : TranslateString(0, 'Until lottery draw')}
+          {/* {lotteryHasDrawn ? TranslateString(0, 'Until ticket sale') : TranslateString(0, 'Until lottery draw')} */}
+          {lotteryHasDrawn ? '' : TranslateString(0, 'Until lottery draw')}
         </Text>
       </TopTextWrapper>
       {lotteryHasDrawn && (
         <BottomTextWrapper>
           <Text color="invertedContrast">
-            {timeUntilLotteryDraw} {TranslateString(0, 'Until lottery draw')}
+          {TranslateString(0, 'Next Lottery Time is ')} {nextLottery} 
           </Text>
         </BottomTextWrapper>
       )}

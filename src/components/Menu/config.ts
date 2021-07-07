@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'MKAT Lottery',
     icon: 'TicketIcon',
-    href: '/lottery-mkat',
+    href: '/',
   },
 ]
 

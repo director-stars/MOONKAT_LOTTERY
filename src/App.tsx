@@ -43,7 +43,7 @@ const App: React.FC = () => {
       <Menu>
         <Suspense fallback={<PageLoader />}>
           <Switch>
-            <Route path="/lottery-mkat">
+            <Route path="/">
              <MkatLottery />
             </Route>
             <Route component={NotFound} />

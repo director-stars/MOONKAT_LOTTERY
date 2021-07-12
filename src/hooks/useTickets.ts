@@ -19,7 +19,7 @@ const useTickets = (lotteryNumber = null) => {
   const ticketsContract = useLotteryTicket()
   const lotteryContract = useLottery()
   const { fastRefresh } = useRefresh()
-
+  
   useEffect(() => {
     const fetchBalance = async () => {
       const res = await getTickets(lotteryContract, ticketsContract, account, lotteryNumber)

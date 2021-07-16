@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Button, useModal } from 'MOONKAT_uikit'
+import { Text, Button, useModal } from 'moonkat_uikit'
 import useI18n from 'hooks/useI18n'
 import { useTicketsForMkat } from 'hooks/useTickets'
 import MyTicketsModal from '../TicketCard/UserTicketsModal'

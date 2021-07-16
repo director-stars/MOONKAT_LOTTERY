@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Progress } from 'MOONKAT_uikit'
+import { Text, Progress } from 'moonkat_uikit'
 import useI18n from 'hooks/useI18n'
 import { useGetLotteryHasDrawnForMkat } from 'hooks/useGetLotteryHasDrawn'
 import { useCurrentTime } from 'hooks/useTimer'

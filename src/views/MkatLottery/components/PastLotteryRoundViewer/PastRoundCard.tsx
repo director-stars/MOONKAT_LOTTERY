@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'MOONKAT_uikit'
+import { Card } from 'moonkat_uikit'
 import { DataResponse } from 'utils/getLotteryRoundData'
 import PastRoundCardError from './PastRoundCardError'
 import PastRoundCardDetails from './PastRoundCardDetails'

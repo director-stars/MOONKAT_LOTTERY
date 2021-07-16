@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Heading, Won, useModal } from 'MOONKAT_uikit'
+import { Button, Heading, Won, useModal } from 'moonkat_uikit'
 import useI18n from 'hooks/useI18n'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useMultiClaimLotteryForMkat } from 'hooks/useBuyLottery'

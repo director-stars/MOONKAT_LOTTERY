@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { Image, Card, CardBody } from 'MOONKAT_uikit'
+import { Image, Card, CardBody } from 'moonkat_uikit'
 import { useWinningNumbersForMkat, useMatchingRewardLengthForMkat } from 'hooks/useTickets'
 import useI18n from 'hooks/useI18n'
 import { useGetLotteryHasDrawnForMkat } from 'hooks/useGetLotteryHasDrawn'

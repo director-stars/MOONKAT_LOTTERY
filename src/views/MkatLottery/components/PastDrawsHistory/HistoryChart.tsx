@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useContext } from 'react'
 import styled from 'styled-components'
-import { Text } from 'MOONKAT_uikit'
+import { Text } from 'moonkat_uikit'
 import PastLotteryDataContext from 'contexts/PastLotteryDataContext'
 import Loading from '../Loading'
 

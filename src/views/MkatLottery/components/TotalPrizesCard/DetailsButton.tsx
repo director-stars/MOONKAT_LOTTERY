@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ChevronDownIcon, Text } from 'MOONKAT_uikit'
+import { ChevronDownIcon, Text } from 'moonkat_uikit'
 
 export interface DetailsButtonProps {
   onClick?: () => void

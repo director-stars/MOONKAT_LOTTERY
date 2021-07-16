@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, CardBody, CardFooter, PancakeRoundIcon, TicketRound } from 'MOONKAT_uikit'
+import { Heading, CardBody, CardFooter, PancakeRoundIcon, TicketRound } from 'moonkat_uikit'
 import useI18n from 'hooks/useI18n'
 import { DataResponse } from 'utils/getLotteryRoundData'
 import LotteryCardHeading from '../LotteryCardHeading'

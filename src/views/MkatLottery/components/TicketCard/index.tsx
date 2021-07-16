@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, TicketRound, Text, Heading } from 'MOONKAT_uikit'
+import { Card, CardBody, TicketRound, Text, Heading } from 'moonkat_uikit'
 import useI18n from 'hooks/useI18n'
 import { useGetLotteryHasDrawnForMkat } from 'hooks/useGetLotteryHasDrawn'
 import { useTicketsForMkat } from 'hooks/useTickets'

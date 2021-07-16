@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { Button, Modal } from 'MOONKAT_uikit'
+import { Button, Modal } from 'moonkat_uikit'
 import styled from 'styled-components'
 import { useWinningNumbersForMkat } from 'hooks/useTickets'
 import useI18n from 'hooks/useI18n'

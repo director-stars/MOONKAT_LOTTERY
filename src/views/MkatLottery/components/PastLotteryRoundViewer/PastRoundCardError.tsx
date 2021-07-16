@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from 'MOONKAT_uikit'
+import { Text } from 'moonkat_uikit'
 
 interface PastRoundCardErrorProps {
   error: {

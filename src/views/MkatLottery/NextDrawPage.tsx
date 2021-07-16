@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { BaseLayout } from 'MOONKAT_uikit'
+import { BaseLayout } from 'moonkat_uikit'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalClaimForMkat } from 'hooks/useTickets'
 import YourPrizesCard from './components/YourPrizesCard'

@@ -1,4 +1,4 @@
-import { MenuEntry } from 'MOONKAT_uikit'
+import { MenuEntry } from 'moonkat_uikit'
 
 const config: MenuEntry[] = [
   {
